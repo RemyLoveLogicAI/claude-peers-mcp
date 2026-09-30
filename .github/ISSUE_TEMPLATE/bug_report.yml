@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible problem with claude-peers.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Include the expected behavior and the behavior you observed.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Include macOS/Linux version, Bun version, and Claude Code version.
